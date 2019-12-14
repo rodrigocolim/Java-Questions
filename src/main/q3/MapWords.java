@@ -1,7 +1,6 @@
 package main.q3;
 
 import java.text.Normalizer;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -49,17 +48,4 @@ public class MapWords {
 		return null;
 	}
 	
-	
-	public static void main(String[] args) {
-		List<String> a = new ArrayList<String>();
-		a.add("Pedro");
-		a.add("João");
-		a.add("Maria");
-		a.add("JOAO");
-		a.add("Alberto");
-		a.add("João");
-		a.add("MARiA");
-		System.out.println(mapWords(a));
-		
-	}
 }
