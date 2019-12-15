@@ -10,6 +10,7 @@ public class MapWords {
 	 *	Maps a word list in a list of tuples (key, value) where 
 	 *	the key is the word and the value is the number of occurrences 
 	 *	of that word.
+	 *	@param wordsList list of words to be mapped
 	 *	@return a string representation of this map.
 	 */
 	public static String mapWords(List<String> wordsList) {
@@ -39,6 +40,7 @@ public class MapWords {
 	
 	/**
 	 *	Transform a word to upper case and remove accentuation
+	 *	@param	word word to be normalized
 	 *	@return a string in upper case and without accentuation characters
 	 */
 	public static String normalize(String word) {

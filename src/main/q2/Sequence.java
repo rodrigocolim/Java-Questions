@@ -5,12 +5,15 @@ public class Sequence {
 	 * Calculates, recursively, the n'th element in a sequence 
 	 * where a n element corresponds to the sum of the previous 
 	 * element with n, or 0, in case of the first element
+	 * @param n position in the sequence
 	 * @return n'th element
 	 */
 	public static int get_nth(int n){
 		if(n>0) {
+			//Returns a nth element as the previous element plus n
 			return get_nth(n-1)+n;
 		}
+		//Returns the first element
 		return 0;
 	}
 	

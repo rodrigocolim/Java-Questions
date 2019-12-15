@@ -6,6 +6,7 @@ public class SquaresSum {
 	
 	/**
 	 *	Checks is a number is prime
+	 *	@number number to check if it's prime
 	 *	@return true if the number is prime or false otherwise
 	 */
 	public static boolean isPrime(Integer number) {
@@ -22,15 +23,17 @@ public class SquaresSum {
 				return false;
 			}
 		}
-		
+		//No divider for number found
 		return true;
 	}
 	
 	/**
 	 *	Sum the square of all prime numbers in a list
+	 *	@numbers list of numbers to sum 
 	 *	@return the sum of all given prime numbers
 	 */
 	public static int sumSquaresOfPrimes(ArrayList<Integer> numbers) {
+		//Initialize the sum
 		int sum = 0;
 		for(Integer number : numbers) {
 			//Checks if number is prime
